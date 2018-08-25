@@ -67,13 +67,14 @@ def over?(board)
 end
 
 def winner(board)
+  if won?(board) == true
   won?(board).each do |i|
     if board[i] == "X"
       return "X"
   else
     return "O"
   end
-  if won?(board) == false
+else
     return nil
   end
 end
