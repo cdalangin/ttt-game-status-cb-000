@@ -59,13 +59,19 @@ end
 end
 
 def over?(board)
-  if draw?(board) || full?(board) || won?(board) 
+  if draw?(board) || full?(board) || won?(board)
      return true
-else
-  return false
+  else
+    return false
+  end
 end
-end
-
 
 def winner(board)
-  
+  if won?(board) == false
+    nil
+  elsif board.include?("X")
+    return "X"
+  else 
+    return "O"
+  end
+end
