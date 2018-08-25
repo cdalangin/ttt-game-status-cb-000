@@ -71,7 +71,7 @@ def winner(board)
     nil
   won?(board).each do |i|
     if i== "X"
-      return X
+      return "X"
   else
     return "O"
   end
