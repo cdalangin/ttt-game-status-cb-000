@@ -71,7 +71,7 @@ def winner(board)
     nil
   elsif board.include?("X")
     return "X"
-  elseif board.include?("O")
+  elsif board.include?("O")
     return "O"
   end
 end
