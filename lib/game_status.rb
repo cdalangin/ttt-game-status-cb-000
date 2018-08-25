@@ -69,9 +69,10 @@ end
 def winner(board)
   if won?(board) == false
     nil
-  elsif won?(board).include?("X")
-    "X"
-  else board.include?("O")
+  won?(board).each do |i|
+    if i== "X"
+      return X
+  else
     return "O"
   end
 end
